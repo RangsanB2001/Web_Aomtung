@@ -12,4 +12,67 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\Lenovo\.nuget\packages\" />
   </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)utailwind\12.0.1\contentFiles\any\net7.0\TailwindCLI\tailwindcss-linux-arm64" Condition="Exists('$(NuGetPackageRoot)utailwind\12.0.1\contentFiles\any\net7.0\TailwindCLI\tailwindcss-linux-arm64')">
+      <NuGetPackageId>uTailwind</NuGetPackageId>
+      <NuGetPackageVersion>12.0.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>TailwindCLI\tailwindcss-linux-arm64</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)utailwind\12.0.1\contentFiles\any\net7.0\TailwindCLI\tailwindcss-linux-armv7" Condition="Exists('$(NuGetPackageRoot)utailwind\12.0.1\contentFiles\any\net7.0\TailwindCLI\tailwindcss-linux-armv7')">
+      <NuGetPackageId>uTailwind</NuGetPackageId>
+      <NuGetPackageVersion>12.0.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>TailwindCLI\tailwindcss-linux-armv7</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)utailwind\12.0.1\contentFiles\any\net7.0\TailwindCLI\tailwindcss-linux-x64" Condition="Exists('$(NuGetPackageRoot)utailwind\12.0.1\contentFiles\any\net7.0\TailwindCLI\tailwindcss-linux-x64')">
+      <NuGetPackageId>uTailwind</NuGetPackageId>
+      <NuGetPackageVersion>12.0.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>TailwindCLI\tailwindcss-linux-x64</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)utailwind\12.0.1\contentFiles\any\net7.0\TailwindCLI\tailwindcss-macos-arm64" Condition="Exists('$(NuGetPackageRoot)utailwind\12.0.1\contentFiles\any\net7.0\TailwindCLI\tailwindcss-macos-arm64')">
+      <NuGetPackageId>uTailwind</NuGetPackageId>
+      <NuGetPackageVersion>12.0.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>TailwindCLI\tailwindcss-macos-arm64</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)utailwind\12.0.1\contentFiles\any\net7.0\TailwindCLI\tailwindcss-macos-x64" Condition="Exists('$(NuGetPackageRoot)utailwind\12.0.1\contentFiles\any\net7.0\TailwindCLI\tailwindcss-macos-x64')">
+      <NuGetPackageId>uTailwind</NuGetPackageId>
+      <NuGetPackageVersion>12.0.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>TailwindCLI\tailwindcss-macos-x64</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)utailwind\12.0.1\contentFiles\any\net7.0\TailwindCLI\tailwindcss-windows-arm64.exe" Condition="Exists('$(NuGetPackageRoot)utailwind\12.0.1\contentFiles\any\net7.0\TailwindCLI\tailwindcss-windows-arm64.exe')">
+      <NuGetPackageId>uTailwind</NuGetPackageId>
+      <NuGetPackageVersion>12.0.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>TailwindCLI\tailwindcss-windows-arm64.exe</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)utailwind\12.0.1\contentFiles\any\net7.0\TailwindCLI\tailwindcss-windows-x64.exe" Condition="Exists('$(NuGetPackageRoot)utailwind\12.0.1\contentFiles\any\net7.0\TailwindCLI\tailwindcss-windows-x64.exe')">
+      <NuGetPackageId>uTailwind</NuGetPackageId>
+      <NuGetPackageVersion>12.0.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>TailwindCLI\tailwindcss-windows-x64.exe</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)utailwind\12.0.1\buildTransitive\uTailwind.props" Condition="Exists('$(NuGetPackageRoot)utailwind\12.0.1\buildTransitive\uTailwind.props')" />
+    <Import Project="$(NuGetPackageRoot)blazorise\1.4.2\buildTransitive\Blazorise.props" Condition="Exists('$(NuGetPackageRoot)blazorise\1.4.2\buildTransitive\Blazorise.props')" />
+    <Import Project="$(NuGetPackageRoot)blazorise.tailwind\1.4.2\buildTransitive\Blazorise.Tailwind.props" Condition="Exists('$(NuGetPackageRoot)blazorise.tailwind\1.4.2\buildTransitive\Blazorise.Tailwind.props')" />
+  </ImportGroup>
 </Project>

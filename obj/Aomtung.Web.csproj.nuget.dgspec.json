@@ -39,6 +39,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Blazorise.Tailwind": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "uTailwind": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
