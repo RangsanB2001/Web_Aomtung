@@ -1,22 +1,52 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.btn-pink {
+    background: linear-gradient(90deg, #FF8686 33.4%, #FF8686 96.4%);
+    color: white;
+}
+
+
+.otp-input {
+    width: 40px; /* ปรับความกว้างตามต้องการ */
+    height: 40px; /* ปรับความสูงตามต้องการ */
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #FF8686;
+    border-radius: 5px;
+    font-size: 18px; /* ปรับขนาดตัวอักษร */
+}
+
+    .otp-input:focus {
+        outline: none; /* ลบเส้นขีดสีน้ำเงินเวลากด focus */
+        border-color: #FF8686; /* เปลี่ยนสีขอบเป็นชมพูเมื่อ focus */
+    }
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Prompt', sans-serif;
 }

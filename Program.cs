@@ -1,3 +1,5 @@
+using Aomtung.Web.Services;
+
 namespace Aomtung.Web
 {
     public class Program
@@ -7,7 +9,11 @@ namespace Aomtung.Web
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddHttpClient();
+            builder.Services.AddHttpContextAccessor();
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<IAomtungAPIRequest, AomtungAPIRequest>();
+            builder.Services.Configure<AomtungAPISetting>(builder.Configuration.GetSection("AomtungAPI"));
 
             var app = builder.Build();
 
@@ -25,6 +31,10 @@ namespace Aomtung.Web
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            /*    app.MapControllerRoute(
+                 name: "default",
+                 pattern: "{controller=Home}/{action=ConfirmOTP}/{id?}");*/
 
             app.Run();
         }
