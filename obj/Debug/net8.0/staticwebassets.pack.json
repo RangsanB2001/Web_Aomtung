@@ -9,8 +9,8 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\ValidatePhone.js",
+      "PackagePath": "staticwebassets\\js\\ValidatePhone.js"
     },
     {
       "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\site.js",
@@ -243,6 +243,10 @@
     {
       "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\logo\\LogoAomtung.svg",
+      "PackagePath": "staticwebassets\\logo\\LogoAomtung.svg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Aomtung.Web.Microsoft.AspNetCore.StaticWebAssets.props",

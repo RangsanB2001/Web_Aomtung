@@ -40,13 +40,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Blazorise.Tailwind": {
+            "CurrieTechnologies.Razor.SweetAlert2": {
               "target": "Package",
-              "version": "[1.4.2, )"
-            },
-            "uTailwind": {
-              "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[5.5.0, )"
             }
           },
           "imports": [
