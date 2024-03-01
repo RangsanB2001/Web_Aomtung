@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container" style="text-align: center; margin-top: 50px;">
+    <img src="~/logo/LogoAomtung.svg" alt="Logo" width="290">
+    <h5 class="h3 text-center font-weight-light mb-4">ระบุรหัสผ่าน</h5>
+    <form>
+        <fieldset>
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="input-group justify-content-center flex-nowrap">
+                    <input type="text" class="js-otp-input otp-input mx-1" oninput="focusNext(this)" inputmode="numeric" pattern="[0-9]*" autocomplete="one-time-code" required>
+                    <input type="text" class="js-otp-input otp-input mx-1" oninput="focusNext(this)" inputmode="numeric" pattern="[0-9]*" required>
+                    <input type="text" class="js-otp-input otp-input mx-1" oninput="focusNext(this)" inputmode="numeric" pattern="[0-9]*" required>
+                    <input type="text" class="js-otp-input otp-input mx-1" oninput="focusNext(this)" inputmode="numeric" pattern="[0-9]*" required>
+                    <input type="text" class="js-otp-input otp-input mx-1" oninput="focusNext(this)" inputmode="numeric" pattern="[0-9]*" required>
+                    <input type="text" class="js-otp-input otp-input mx-1" oninput="focusNext(this)" inputmode="numeric" pattern="[0-9]*" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phoneInput" class="form-label h3 p-1">ระบุหมายเลขโทรศัพท์</label>
+                    <div class="input-group p-2">
+                        <span class="input-group-text mx-1" id="addon-wrapping">+66</span>
+                        <input type="tel" id="phoneInput" class="form-control input-phone" name="Phone" inputmode="numeric" pattern="[0-9]*" maxlength="10" placeholder="063xxxxxxx" aria-label="Phone" required>
+                    </div>
+                    <span id="ErrorMessage" class="text-danger mt-2"></span>
+                </div>
+            </div>
+            <button class="btn btn-pink mb-3 summit-otp" href="#" style="width: 320px; margin-top: 20px;" type="submit" disabled>ยืนยัน</button>
+        </fieldset>
+    </form>
+</div>
+

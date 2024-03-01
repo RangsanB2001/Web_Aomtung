@@ -1,4 +1,7 @@
 using Aomtung.Web.Services;
+using Helpers.CallHttpClientHelper;
+using Middlewares;
+using SweetAlert2;
 
 namespace Aomtung.Web
 {
@@ -9,11 +12,19 @@ namespace Aomtung.Web
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddHttpClient();
-            builder.Services.AddHttpContextAccessor();
+            builder.Services.AddSession(option =>
+            {
+                option.IdleTimeout = TimeSpan.FromMinutes(5);
+                option.Cookie.HttpOnly = true;
+                option.Cookie.IsEssential = true;
+            });
+
+
             builder.Services.AddControllersWithViews();
-            builder.Services.AddScoped<IAomtungAPIRequest, AomtungAPIRequest>();
-            builder.Services.Configure<AomtungAPISetting>(builder.Configuration.GetSection("AomtungAPI"));
+            builder.Services.AddHttpContextAccessor();
+            builder.Services.AddICallHttpClientHelper();
+            builder.Services.AddSweetAlert2();
+            builder.Services.Configure<ServicesSettings>(builder.Configuration.GetSection(nameof(ServicesSettings)));
 
             var app = builder.Build();
 
@@ -26,15 +37,19 @@ namespace Aomtung.Web
 
             app.UseRouting();
 
+            app.UseForwardedPrefixMiddleware();
+
+            app.UseSession();
+
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
-            /*    app.MapControllerRoute(
-                 name: "default",
-                 pattern: "{controller=Home}/{action=ConfirmOTP}/{id?}");*/
+            /*  app.MapControllerRoute(
+               name: "default",
+               pattern: "{controller=Home}/{action=ConfirmOTP}/{id?}");*/
 
             app.Run();
         }

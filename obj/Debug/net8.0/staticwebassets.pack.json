@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\CountdownTime.js",
+      "PackagePath": "staticwebassets\\js\\CountdownTime.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\Sweetalert.js",
+      "PackagePath": "staticwebassets\\js\\Sweetalert.js"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\ValidatePhone.js",
       "PackagePath": "staticwebassets\\js\\ValidatePhone.js"
     },

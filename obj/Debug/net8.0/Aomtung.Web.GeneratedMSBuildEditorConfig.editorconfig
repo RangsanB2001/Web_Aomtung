@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Lenovo/Documents/Web_Aomtung/Web_Aomtung/Aomtung.Web/Views/Authen/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVuXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Lenovo/Documents/Web_Aomtung/Web_Aomtung/Aomtung.Web/Views/Home/ConfirmOTP.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb25maXJtT1RQLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Documents/Web_Aomtung/Web_Aomtung/Aomtung.Web/Views/Home/ErrorPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvclBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lenovo/Documents/Web_Aomtung/Web_Aomtung/Aomtung.Web/Views/Home/Index.cshtml]

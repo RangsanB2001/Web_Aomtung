@@ -27,6 +27,25 @@ body {
 }
 
 
+
+.reset-otp {
+    transition: color 0.3s, background-color 0.3s; /* เพิ่ม transition เมื่อเปลี่ยนสี */
+    color: black; /* กำหนดสีข้อความเป็นสีดำ */
+    text-decoration: none; /* ไม่มี underline ในข้อความ */
+}
+
+    .reset-otp:hover {
+        color: blue; /* เปลี่ยนสีข้อความเป็นสีฟ้าเมื่อ hover */
+        background-color: #f0f0f0; /* เปลี่ยนสีพื้นหลังเป็นสีเทาอ่อนเมื่อ hover */
+        text-decoration: underline; /* เพิ่ม underline เมื่อ hover */
+    }
+
+
+
+.summit-phone {
+    width: 230px;
+}
+
 .otp-input {
     width: 40px; /* ปรับความกว้างตามต้องการ */
     height: 40px; /* ปรับความสูงตามต้องการ */

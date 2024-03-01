@@ -2,22 +2,26 @@
     ViewData["Title"] = "Verify Phone";
 }
 
-<div class="text-center container">
-    <div class="logo-img-index">
-        <img src="logo/LogoAomtung.svg" alt="Logo" />
-    </div>
-    <form method="post">
-        <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label p-3 h3">ระบุหมายเลขโทรศัพท์</label>
-            <div class="input-group flex-nowrap mb-2">
-                <span class="input-group-text mx-1" id="addon-wrapping">+66</span>
-                <input type="tel" id="phoneInput" class="form-control" inputmode="numeric" pattern="[0-9]*" maxlength="10" placeholder="063xxxxxxx" aria-label="Phone" style="width: 220px; border: 1px solid #FF8686; border-radius: 5px;" required>
+<div class="container text-center">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="text-center">
+                <img src="logo/LogoAomtung.svg" alt="Logo" width="290">
             </div>
-            <span id="ErrorMessage" class="p-2" style="color: red;"></span>
+            <form asp-action="GanerateOTP" asp-controller="Home" method="post">
+                <div class="mb-3">
+                    <label for="phoneInput" class="form-label h3 p-1">ระบุหมายเลขโทรศัพท์</label>
+                    <div class="input-group p-2">
+                        <span class="input-group-text mx-1" id="addon-wrapping">+66</span>
+                        <input type="tel" id="phoneInput" class="form-control input-phone" name="Phone" inputmode="numeric" pattern="[0-9]*" maxlength="10" placeholder="063xxxxxxx" aria-label="Phone" required>
+                    </div>
+                    <span id="ErrorMessage" class="text-danger mt-2"></span>
+                </div>
+                <div class="text-center pt-3">
+                    <button id="btn-summit-phone" class="btn btn-pink summit-phone" type="submit" disabled>ยืนยัน</button>
+                </div>
+            </form>
         </div>
-        <div class="p-1">
-            <button class="btn btn-pink" type="submit" style="width:230px;">ยืนยัน</button>
-        </div>
-    </form>
+    </div>
 </div>
 
