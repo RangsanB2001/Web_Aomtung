@@ -1,48 +1,44 @@
-﻿function validatePhoneNumber(input) {
-    var pattern = /^\d{10}$/;
-    if (input.value.match(pattern)) {
-        return true;
-    } else {
-        return false;
-    }
-}
+﻿function initializePhoneNumberValidation(inputId, errorMessageId, btnSummitId, completeCallback) {
+    var input = document.getElementById(inputId);
+    var errorMessage = document.getElementById(errorMessageId);
+    var btnSummit = document.getElementById(btnSummitId);
 
-function Phonenumber() {
-
-    var input = document.getElementById('phoneInput');
-    var callback = null;
-
-    function init(completeCallback) {
-        callback = completeCallback;
-        registerEvents(input);
+    function init() {
+        registerEvents();
     }
 
-    function registerEvents(element) {
-        element.addEventListener("input", function (ev) {
-            onInput(ev);
-        });
+    function registerEvents() {
+        input.addEventListener("input", onInput);
     }
 
     function onInput(ev) {
-        var input = document.getElementById('phoneInput');
-        var btnSummit = document.getElementById('btn-summit-phone');
-
-        btnSummit.disabled = true;
-
         var value = ev.data || ev.target.value;
         if (!isDigit(value)) {
             input.value = "";
         } else if (input.value.length >= 10) {
             input.value = input.value.substring(0, 10);
-            document.getElementById("ErrorMessage").innerText = "";
+            errorMessage.innerText = "";
         } else if (input.value.length < 10) {
-            document.getElementById("ErrorMessage").innerText = "กรุณากรอกหมายเลขโทรศัพท์ 10 ตัวเลข";
+            errorMessage.innerText = "กรุณากรอกหมายเลขโทรศัพท์ 10 ตัวเลข";
         }
 
         if (input.value.length === 10) {
-            callback(input.value);
-            btnSummit.disabled = false;
+            if (validatePhoneNumber(input)) {
+                errorMessage.innerText = "";
+                btnSummit.disabled = false;
+                completeCallback(input.value);
+            } else {
+                errorMessage.innerText = "รูปแบบหมายเลขโทรศัพท์ไม่ถูกต้อง";
+                btnSummit.disabled = true;
+            }
+        } else {
+            btnSummit.disabled = true;
         }
+    }
+
+    function validatePhoneNumber(input) {
+        var pattern = /^\d{10}$/;
+        return pattern.test(input.value);
     }
 
     function isDigit(d) {
@@ -54,12 +50,3 @@ function Phonenumber() {
     };
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-
-    var phoneInput = document.getElementById("phoneInput");
-    var NumberModule = Phonenumber("input-phone");
-    phoneInput.addEventListener("input", function () {
-        validatePhoneNumber(this);
-    });
-    NumberModule.init(function () { });
-});

@@ -2,31 +2,48 @@
     ViewData["Title"] = "Login";
 }
 
-<div class="container" style="text-align: center; margin-top: 50px;">
+<div class="text-center">
     <img src="~/logo/LogoAomtung.svg" alt="Logo" width="290">
-    <h5 class="h3 text-center font-weight-light mb-4">ระบุรหัสผ่าน</h5>
+</div>
+<div class="container-sm">
     <form>
-        <fieldset>
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="input-group justify-content-center flex-nowrap">
-                    <input type="text" class="js-otp-input otp-input mx-1" oninput="focusNext(this)" inputmode="numeric" pattern="[0-9]*" autocomplete="one-time-code" required>
-                    <input type="text" class="js-otp-input otp-input mx-1" oninput="focusNext(this)" inputmode="numeric" pattern="[0-9]*" required>
-                    <input type="text" class="js-otp-input otp-input mx-1" oninput="focusNext(this)" inputmode="numeric" pattern="[0-9]*" required>
-                    <input type="text" class="js-otp-input otp-input mx-1" oninput="focusNext(this)" inputmode="numeric" pattern="[0-9]*" required>
-                    <input type="text" class="js-otp-input otp-input mx-1" oninput="focusNext(this)" inputmode="numeric" pattern="[0-9]*" required>
-                    <input type="text" class="js-otp-input otp-input mx-1" oninput="focusNext(this)" inputmode="numeric" pattern="[0-9]*" required>
-                </div>
-                <div class="mb-3">
-                    <label for="phoneInput" class="form-label h3 p-1">ระบุหมายเลขโทรศัพท์</label>
-                    <div class="input-group p-2">
-                        <span class="input-group-text mx-1" id="addon-wrapping">+66</span>
-                        <input type="tel" id="phoneInput" class="form-control input-phone" name="Phone" inputmode="numeric" pattern="[0-9]*" maxlength="10" placeholder="063xxxxxxx" aria-label="Phone" required>
+        <div class="row justify-content-center">
+            <fieldset class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="phoneLogin" class="form-label">ระบุหมายเลขโทรศัพท์</label>
+                    <div class="input-group">
+                        <input type="text" id="phoneLogin" class="form-control input-phone-login" name="Phone" pattern="[0-9]{10}" inputmode="numeric" maxlength="10" placeholder="063xxxxxxx" aria-label="Phone" required>
                     </div>
-                    <span id="ErrorMessage" class="text-danger mt-2"></span>
+                    <div class="d-flex justify-content-center">
+                        <span id="LoginErrorMessage" class="text-danger text-center mt-2"></span>
+                    </div>
                 </div>
-            </div>
-            <button class="btn btn-pink mb-3 summit-otp" href="#" style="width: 320px; margin-top: 20px;" type="submit" disabled>ยืนยัน</button>
-        </fieldset>
+                <div class="form-group mb-3">
+                    <label for="passInput" class="form-label">รหัสผ่าน</label>
+                    <div class="input-group">
+                        <input type="password" id="passInput" class="form-control input-pass" name="Password" required>
+                        <button id="showPasswordBtn" type="button" class="btn btn-outline-light showPasswordBtn"><i id="eyeIcon" class="bi bi-eye-slash text-black"></i></button>
+                    </div>
+                </div>
+                <div class="form-group mb-3 mt-4">
+                    <button id="btn-summit-login" class="btn btn-pink summit-login w-100" type="submit" disabled>ยืนยัน</button>
+                </div>
+            </fieldset>
+        </div>
     </form>
 </div>
+<div class="form-group mb-3 mt-4 text-center">
+    <p class="form-label mb-0 mx-1">ยังไม่มีบัญชีใช่ไหม ? </p>
+    <a href="@Url.Action("Register", "Authen")" class="link-offset-2 link-to-regis link-underline-opacity-0">ลงทะเบียน</a>
+</div>
 
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var numberModuleLogin = initializePhoneNumberValidation("phoneLogin", "LoginErrorMessage", "btn-summit-login", function () { });
+            numberModuleLogin.init();
+
+            togglePasswordVisibility("showPasswordBtn", "passInput");
+        });
+    </script>
+}

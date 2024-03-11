@@ -1,11 +1,7 @@
+C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\bin\Debug\net8.0\Aomtung.Web.exe
 C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\bin\Debug\net8.0\appsettings.json
 C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\bin\Debug\net8.0\Aomtung.Web.staticwebassets.runtime.json
-C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\bin\Debug\net8.0\Aomtung.Web.exe
-C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\bin\Debug\net8.0\Aomtung.Web.deps.json
-C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\bin\Debug\net8.0\Aomtung.Web.runtimeconfig.json
-C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\bin\Debug\net8.0\Aomtung.Web.dll
-C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\bin\Debug\net8.0\Aomtung.Web.pdb
 C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\obj\Debug\net8.0\Aomtung.Web.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\obj\Debug\net8.0\Aomtung.Web.AssemblyInfoInputs.cache
 C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\obj\Debug\net8.0\Aomtung.Web.AssemblyInfo.cs
@@ -27,8 +23,9 @@ C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\obj\Debug\net8.0\s
 C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\obj\Debug\net8.0\Aomtung.Web.dll
 C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\obj\Debug\net8.0\refint\Aomtung.Web.dll
 C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\obj\Debug\net8.0\Aomtung.Web.pdb
+C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\bin\Debug\net8.0\Aomtung.Web.deps.json
+C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\bin\Debug\net8.0\Aomtung.Web.runtimeconfig.json
+C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\bin\Debug\net8.0\Aomtung.Web.dll
+C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\bin\Debug\net8.0\Aomtung.Web.pdb
 C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\obj\Debug\net8.0\Aomtung.Web.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\obj\Debug\net8.0\ref\Aomtung.Web.dll
-C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\obj\Debug\net8.0\Aomtung.Web.csproj.AssemblyReference.cache
-C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\obj\Debug\net8.0\Aomtung..2FAB3C18.Up2Date
-C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web\bin\Debug\net8.0\SweetAlert2.dll

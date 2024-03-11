@@ -20,6 +20,7 @@ namespace Aomtung.Web.Controllers
             this.httpClientHelper = httpClientHelper;
         }
 
+
         public IActionResult Index()
         {
             return View();
@@ -73,6 +74,10 @@ namespace Aomtung.Web.Controllers
             return View(otpResponse);
         }
 
+        public IActionResult ViewHome()
+        {
+            return View();
+        }
         public IActionResult ErrorPage()
         {
             return View();

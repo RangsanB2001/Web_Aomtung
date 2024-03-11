@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Lenovo\Documents\Web_Aomtung\Web_Aomtung\Aomtung.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Lenovo/Documents/Web_Aomtung/Web_Aomtung/Aomtung.Web/Views/Authen/CreatePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVuXENyZWF0ZVBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Lenovo/Documents/Web_Aomtung/Web_Aomtung/Aomtung.Web/Views/Authen/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVuXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Documents/Web_Aomtung/Web_Aomtung/Aomtung.Web/Views/Authen/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVuXFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lenovo/Documents/Web_Aomtung/Web_Aomtung/Aomtung.Web/Views/Home/ConfirmOTP.cshtml]
@@ -36,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Lenovo/Documents/Web_Aomtung/Web_Aomtung/Aomtung.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Documents/Web_Aomtung/Web_Aomtung/Aomtung.Web/Views/Home/ViewHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWV3SG9tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lenovo/Documents/Web_Aomtung/Web_Aomtung/Aomtung.Web/Views/Shared/Error.cshtml]

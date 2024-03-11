@@ -12,7 +12,4 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\Lenovo\.nuget\packages\" />
   </ItemGroup>
-  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)sweetalert2\1.0.0\buildTransitive\SweetAlert2.props" Condition="Exists('$(NuGetPackageRoot)sweetalert2\1.0.0\buildTransitive\SweetAlert2.props')" />
-  </ImportGroup>
 </Project>

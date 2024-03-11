@@ -1,7 +1,6 @@
 using Aomtung.Web.Services;
 using Helpers.CallHttpClientHelper;
 using Middlewares;
-using SweetAlert2;
 
 namespace Aomtung.Web
 {
@@ -23,7 +22,6 @@ namespace Aomtung.Web
             builder.Services.AddControllersWithViews();
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddICallHttpClientHelper();
-            builder.Services.AddSweetAlert2();
             builder.Services.Configure<ServicesSettings>(builder.Configuration.GetSection(nameof(ServicesSettings)));
 
             var app = builder.Build();
@@ -45,11 +43,7 @@ namespace Aomtung.Web
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
-
-            /*  app.MapControllerRoute(
-               name: "default",
-               pattern: "{controller=Home}/{action=ConfirmOTP}/{id?}");*/
+                pattern: "{controller=Authen}/{action=Login}/{id?}");
 
             app.Run();
         }
