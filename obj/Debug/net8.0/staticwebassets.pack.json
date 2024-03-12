@@ -9,6 +9,34 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\img_icons\\down_icon.svg",
+      "PackagePath": "staticwebassets\\img_icons\\down_icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\img_icons\\png2svg.zip",
+      "PackagePath": "staticwebassets\\img_icons\\png2svg.zip"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\img_icons\\up_icon.svg",
+      "PackagePath": "staticwebassets\\img_icons\\up_icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\img_icons\\wallet.svg",
+      "PackagePath": "staticwebassets\\img_icons\\wallet.svg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\CountdownTime.js",
+      "PackagePath": "staticwebassets\\js\\CountdownTime.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\Sweetalert.js",
+      "PackagePath": "staticwebassets\\js\\Sweetalert.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\TogglePassword.js",
+      "PackagePath": "staticwebassets\\js\\TogglePassword.js"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\ValidatePhone.js",
       "PackagePath": "staticwebassets\\js\\ValidatePhone.js"
     },
