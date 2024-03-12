@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aomtung.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0e290dba7d2b0144f4736e6ad21c3bea2e02e83")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe37ef84de9c859372a615df7b3933d086e4f216")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aomtung.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aomtung.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
