@@ -1,0 +1,103 @@
+﻿@{
+    ViewData["Title"] = "Profile";
+    Layout = "_LayoutHomepage";
+}
+
+<div class="container profile">
+
+    <h1>
+        <small>Profile</small>
+    </h1>
+    <div class="avatar-upload">
+        <div class="avatar-edit">
+            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+            <label for="imageUpload"><i class="bi bi-pencil-square"></i></label>
+        </div>
+        <div class="avatar-preview">
+            <div id="imagePreview" style="background-image: url(/logo/LogoAomtung.svg);"></div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 p-1">
+            <div class="card card-edit-phone">
+                <div class="card-body">
+                    <form>
+                        <div class="row justify-content-center">
+                            <fieldset class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label for="phoneLogin" class="form-label">ระบุหมายเลขโทรศัพท์</label>
+                                    <div class="input-group">
+                                        <input type="text" id="phoneLogin" class="form-control input-phone-login" name="Phone" pattern="[0-9]{10}" inputmode="numeric" maxlength="10" placeholder="063xxxxxxx" aria-label="Phone" required>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <span id="LoginErrorMessage" class="text-danger text-center mt-2"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="passInput" class="form-label">รหัสผ่าน</label>
+                                    <div class="input-group">
+                                        <input type="password" id="passInput" class="form-control input-pass" name="Password" required>
+                                        <button id="showPasswordBtn" type="button" class="btn btn-outline-light showPasswordBtn"><i id="eyeIcon" class="bi bi-eye-slash text-black"></i></button>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3 mt-4">
+                                    <button id="btn-summit-login" class="btn btn-pink summit-login w-100" type="submit" disabled>ยืนยัน</button>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 p-1">
+            <div class="card card-edit-pass">
+                <div class="card-body">
+                    <form>
+                        <div class="row justify-content-center">
+                            <fieldset class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label for="phoneLogin" class="form-label">ระบุหมายเลขโทรศัพท์</label>
+                                    <div class="input-group">
+                                        <input type="text" id="phoneLogin" class="form-control input-phone-login" name="Phone" pattern="[0-9]{10}" inputmode="numeric" maxlength="10" placeholder="063xxxxxxx" aria-label="Phone" required>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <span id="LoginErrorMessage" class="text-danger text-center mt-2"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="passInput" class="form-label">รหัสผ่าน</label>
+                                    <div class="input-group">
+                                        <input type="password" id="passInput" class="form-control input-pass" name="Password" required>
+                                        <button id="showPasswordBtn" type="button" class="btn btn-outline-light showPasswordBtn"><i id="eyeIcon" class="bi bi-eye-slash text-black"></i></button>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3 mt-4">
+                                    <button id="btn-summit-login" class="btn btn-pink summit-login w-100" type="submit" disabled>ยืนยัน</button>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function () {
+            readURL(this);
+        });
+    </script>
+}
