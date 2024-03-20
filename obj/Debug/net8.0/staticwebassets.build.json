@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vqHX6CDfxOeLRJ3PwFdIpsWPRqq8mLza045a8QtJd/o=",
+  "Hash": "lJ1EtS83vwteHVdaDKedw1OlcKAOdYlwXdZYuQNeq24=",
   "Source": "Aomtung.Web",
   "BasePath": "_content/Aomtung.Web",
   "Mode": "Default",
@@ -243,25 +243,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\GraphDonut.js"
-    },
-    {
-      "Identity": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\Mousemove.js",
-      "SourceId": "Aomtung.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\",
-      "BasePath": "_content/Aomtung.Web",
-      "RelativePath": "js/Mousemove.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\Mousemove.js"
     },
     {
       "Identity": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\site.js",

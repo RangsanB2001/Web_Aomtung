@@ -19,36 +19,33 @@
     }
 }
 
-// Usage
+// Common data and configuration
+const commonData = {
+    labels: ['รายรับแน่นอน', 'รายรับไม่แน่นอน'],
+    hoverOffset: 4
+};
 
-new Chart(document.getElementById('ChartIncome'), {
-    type: 'doughnut',
-    data: {
-        labels: ['รายรับแน่นอน', 'รายรับไม่แน่นอน'],
-        datasets: [{
-            label: 'รายรับ',
-            data: [15000, 2500],
-            borderWidth: 1,
-            backgroundColor: [
-                'rgba(180, 226, 244, 1)', // Blue
-                'rgba(5, 101, 139, 1)'  // Cyan
-            ]
-        }]
-    }
-});
+// Chart 1: Income
+const incomeData = {
+    ...commonData,
+    datasets: [{
+        label: 'รายรับ',
+        data: [15000, 2500],
+        backgroundColor: ['rgba(180, 226, 244, 1)', 'rgba(5, 101, 139, 1)'] // Blue, Cyan
+    }]
+};
+const incomeConfig = { type: 'pie', data: incomeData };
+new Chart(document.getElementById('ChartIncome'), incomeConfig);
 
-new Chart(document.getElementById('ChartExpen'), {
-    type: 'doughnut',
-    data: {
-        labels: ['รายจ่ายจำเป็น', 'รายจ่ายไม่จำเป็น'],
-        datasets: [{
-            label: 'รายจ่าย',
-            data: [5000, 10000],
-            borderWidth: 1,
-            backgroundColor: [
-                'rgba(248, 237, 117, 1)', // Red
-                'rgba(245, 108, 108, 1)'  // Yellow
-            ]
-        }]
-    }
-});
+// Chart 2: Expenditure
+const expenditureData = {
+    ...commonData,
+    labels: ['รายจ่ายจำเป็น', 'รายจ่ายไม่จำเป็น'],
+    datasets: [{
+        label: 'รายจ่าย',
+        data: [15000, 2500],
+        backgroundColor: ['rgba(248, 237, 117, 1)', 'rgba(245, 108, 108, 1)'] // Red, Yellow
+    }]
+};
+const expenditureConfig = { type: 'pie', data: expenditureData };
+new Chart(document.getElementById('ChartExpen'), expenditureConfig);

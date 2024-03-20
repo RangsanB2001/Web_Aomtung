@@ -54,7 +54,6 @@ body {
     width: 100%;
     height: 60px;
     line-height: 60px;
-    background-color: #f8f9fa;
 }
 
 /* Buttons */
@@ -193,4 +192,17 @@ h5 {
 
 .custom-toggler .navbar-toggler-icon {
     color: deeppink;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* Aspect ratio 1:1 (square) */
+    overflow: hidden;
+}
+
+.chart-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }

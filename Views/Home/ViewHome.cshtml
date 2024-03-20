@@ -2,139 +2,219 @@
     ViewData["Title"] = "หน้าหลัก";
     Layout = "_LayoutHomepage";
 }
-
-<div class="row row-cols-lg-2 row-cols-md-2">
-
-    <div class="col-lg-6 col-md-6 mb-3">
-        <!--Start Card Wallet-->
-        <div class="card border-left-primary">
-            <div class="card-body text-center">
-                <div class="row no-gutters align-items-center justify-content-center">
-                    <div class="col-auto  d-flex align-items-center">
-                        <img src="/img_icons/wallet.svg" alt="" width="80">
-                    </div>
-                    <div class="col">
-                        <div class="text-s">
-                            คงเหลือ (บาท)
+<div class="container-md">
+    <div class="row row-cols-lg-3 row-cols-md-2 d-flex">
+        <div class="col-lg-6 col-md-6 mb-3">
+            <!-- Start Card Wallet -->
+            <div class="card border-left-primary">
+                <div class="card-body text-center">
+                    <div class="row no-gutters align-items-center justify-content-center">
+                        <div class="col-auto d-flex align-items-center">
+                            <img src="/img_icons/wallet.svg" alt="" width="80">
                         </div>
-                        <div class="h3 mb-0">
-                            <span>8,000.00</span>
+                        <div class="col">
+                            <div class="text-s">คงเหลือ (บาท)</div>
+                            <div class="h3 mb-0"><span>8,000.00</span></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--End Card Wallet-->
+            <!-- End Card Wallet -->
 
-        <br>
+            <br>
 
-        <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-2">
-            <!--Start Card Income-->
-            <div class="col-6">
-                <div class="card border-left-primary ">
-                    <div class="card-body text-center">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-auto d-flex align-items-center">
-                                <img src="/img_icons/up_icon.svg" alt="" width="60">
-                            </div>
-                            <div class="col mr-1">
-                                <div class="text-s font-weight-bold">
-                                    รายรับ (บาท)
+            <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-2">
+                <!-- Start Card Income -->
+                <div class="col">
+                    <div class="card border-left-primary">
+                        <div class="card-body text-center">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-auto d-flex align-items-center">
+                                    <img src="/img_icons/up_icon.svg" alt="" width="60">
                                 </div>
-                                <div class="h3 mb-0">
-                                    <span>10,000.00</span>
+                                <div class="col mr-1">
+                                    <div class="text-s font-weight-bold">รายรับ (บาท)</div>
+                                    <div class="h3 mb-0"><span>10,000.00</span></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--End Card Income-->
-            <!--Start Card Expenses-->
-            <div class="col-6">
-                <div class="card border-left-primary ">
-                    <div class="card-body text-center">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-auto">
-                                <img src="/img_icons/down_icon.svg" alt="" width="60">
-                            </div>
-                            <div class="col mr-1">
-                                <div class="text-s font-weight-bold">
-                                    รายจ่าย (บาท)
+                <!-- End Card Income -->
+                <!-- Start Card Expenses -->
+                <div class="col">
+                    <div class="card border-left-primary">
+                        <div class="card-body text-center">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-auto">
+                                    <img src="/img_icons/down_icon.svg" alt="" width="60">
                                 </div>
-                                <div class="h3 mb-0">
-                                    <span>2,000.00</span>
+                                <div class="col mr-1">
+                                    <div class="text-s font-weight-bold">รายจ่าย (บาท)</div>
+                                    <div class="h3 mb-0"><span>2,000.00</span></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- End Card Expenses -->
             </div>
-            <!--End Card Expenses-->
-        </div>
+            <div class="card-header-pills">
+                <div class="py-3 d-flex flex-row align-items-center justify-content-center">
+                    <div class="btn-group w-100" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnIncome" id="btnIncome" autocomplete="off">
+                        <label class="btn btn-lg custom-radio active-color-1" for="btnIncome" onclick="toggleChartAndChangeColor('ChartIncome')">รายรับ</label>
 
-        <br>
-
-        <div class="py-3 d-flex flex-row align-items-center justify-content-center">
-            <div class="btn-group w-100" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="btnIncome" id="btnIncome" autocomplete="off">
-                <label class="btn btn-lg custom-radio active-color-1" for="btnIncome" onclick="toggleChartAndChangeColor('ChartIncome')">รายรับ</label>
-
-                <input type="radio" class="btn-check" name="btnExpen" id="btnExpen" autocomplete="off">
-                <label class="btn btn-lg custom-radio active-color-2" for="btnExpen" onclick="toggleChartAndChangeColor('ChartExpen');">รายจ่าย</label>
-            </div>
-        </div>
-
-        <!--Graph-->
-        <div class="card border-left-primary">
-            <div class="card-body graph-boby">
-                <div class="row justify-content-center">
-                    <canvas id="ChartIncome" class="col"></canvas>
-                    <canvas id="ChartExpen" class="col" style="display:none;"></canvas>
-                </div>
-            </div>
-        </div>
-        <!--Graph-->
-    </div>
-
-    <!--Card List-->
-    <div class="col-xl-6 col-sm-4 col-md-6 mb-4 bg-list">
-        <div class="container profile p-2">
-            <div class="row no-gutters align-items-center">
-                <div class="col-auto d-flex">
-                    <h5 class="fw-bold mb-0">รายการย้อนหลัง</h5>
-                </div>
-
-                <div class="col mr-2 d-flex justify-content-end">
-                    <div class="dropdown">
-                        <button class="btn btn-light dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            มกราคม 67
-                        </button>
-                        <ul class="dropdown-menu w-100" style="max-height: 200px; overflow-y: auto;">
-                            <li><a class="dropdown-item" href="#">มกราคม</a></li>
-                            <li><a class="dropdown-item" href="#">กุมภาพันธ์</a></li>
-                            <li><a class="dropdown-item" href="#">มีนาคม</a></li>
-                            <li><a class="dropdown-item" href="#">เมษายน</a></li>
-                            <li><a class="dropdown-item" href="#">พฤษภาคม</a></li>
-                            <li><a class="dropdown-item" href="#">มิถุนายน</a></li>
-                            <li><a class="dropdown-item" href="#">กรกฎาคม</a></li>
-                            <li><a class="dropdown-item" href="#">สิงหาคม</a></li>
-                            <li><a class="dropdown-item" href="#">กันยายน</a></li>
-                            <li><a class="dropdown-item" href="#">ตุลาคม</a></li>
-                            <li><a class="dropdown-item" href="#">พฤศจิกายน</a></li>
-                            <li><a class="dropdown-item" href="#">ธันวาคม</a></li>
-                            <!-- Add more items as needed -->
-                        </ul>
-
+                        <input type="radio" class="btn-check" name="btnExpen" id="btnExpen" autocomplete="off">
+                        <label class="btn btn-lg custom-radio active-color-2" for="btnExpen" onclick="toggleChartAndChangeColor('ChartExpen');">รายจ่าย</label>
                     </div>
                 </div>
             </div>
+            <!--Graph-->
+
+            <div class="card border-left-primary">
+                <div class="card-body graph-body">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-10 col-md-10 col-sm-12">
+                            <div class="chart-container">
+                                <canvas id="ChartIncome" class="col chart-canvas"></canvas>
+                                <canvas id="ChartExpen" class="col chart-canvas" style="display:none;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Graph-->
         </div>
 
-        <br>
-        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0" style="height: 500px; overflow-y: auto;">
-            <div class="container">
-                <div class="list-income" data-section="income">
+
+        <!--Card List-->
+        <div class="col-xl-6 col-sm-4 col-md-6 mb-4 bg-list">
+            <div class="container profile p-2">
+                <div class="row no-gutters align-items-center">
+                    <div class="col-auto d-flex">
+                        <h5 class="fw-bold mb-0">รายการย้อนหลัง</h5>
+                    </div>
+
+                    <div class="col mr-2 d-flex justify-content-end">
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                มกราคม 67
+                            </button>
+                            <ul class="dropdown-menu w-100" style="max-height: 200px; overflow-y: auto;">
+                                <li><a class="dropdown-item" href="#">มกราคม</a></li>
+                                <li><a class="dropdown-item" href="#">กุมภาพันธ์</a></li>
+                                <li><a class="dropdown-item" href="#">มีนาคม</a></li>
+                                <li><a class="dropdown-item" href="#">เมษายน</a></li>
+                                <li><a class="dropdown-item" href="#">พฤษภาคม</a></li>
+                                <li><a class="dropdown-item" href="#">มิถุนายน</a></li>
+                                <li><a class="dropdown-item" href="#">กรกฎาคม</a></li>
+                                <li><a class="dropdown-item" href="#">สิงหาคม</a></li>
+                                <li><a class="dropdown-item" href="#">กันยายน</a></li>
+                                <li><a class="dropdown-item" href="#">ตุลาคม</a></li>
+                                <li><a class="dropdown-item" href="#">พฤศจิกายน</a></li>
+                                <li><a class="dropdown-item" href="#">ธันวาคม</a></li>
+                                <!-- Add more items as needed -->
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0" style="height: 500px; overflow-y: auto;">
+                <div class="container">
+                    <div class="list-income" data-section="income">
+                        <div class="card border-left-primary ">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto d-flex">
+                                        <h5 class="fw-bold mb-0 text-darkblue">รายรับแน่นอน</h5>
+                                    </div>
+
+                                    <div class="col mr-2 d-flex justify-content-end">
+                                        <div class="fw-bold h5 text-darkblue">+1,000.00 ฿</div>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col-auto d-flex">
+                                        <p class="fw-bold mb-0 ">เงินเดือน</p>
+                                    </div>
+                                    <div class="col mr-2 d-flex justify-content-end">
+                                        <p class="fw-light mb-0">22/12/2023 11:17</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card border-left-primary ">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto d-flex">
+                                        <h5 class="fw-bold mb-0 text-lightblue">รายรับไม่แน่นอน</h5>
+                                    </div>
+
+                                    <div class="col mr-2 d-flex justify-content-end">
+                                        <div class="fw-bold h5 text-lightblue">+500.00 ฿</div>
+                                    </div>
+
+                                    <div class="w-100"></div>
+                                    <div class="col-auto d-flex">
+                                        <p class="fw-bold mb-0 ">เงินเดือน</p>
+                                    </div>
+                                    <div class="col mr-2 d-flex justify-content-end">
+                                        <p class="fw-light mb-0">22/12/2023 11:17</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card border-left-primary ">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto d-flex">
+                                        <h5 class="fw-bold mb-0 text-darkpink">รายรับไม่แน่นอน</h5>
+                                    </div>
+
+                                    <div class="col mr-2 d-flex justify-content-end">
+                                        <div class="fw-bold h5 text-darkpink">-2,500.00 ฿</div>
+                                    </div>
+
+                                    <div class="w-100"></div>
+                                    <div class="col-auto d-flex">
+                                        <p class="fw-bold mb-0 ">ค่าอาหาร</p>
+                                    </div>
+                                    <div class="col mr-2 d-flex justify-content-end">
+                                        <p class="fw-light mb-0">22/12/2023 11:17</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card border-left-primary ">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto d-flex">
+                                        <h5 class="fw-bold mb-0 text-yellow">รายจ่ายไม่จำเป็น</h5>
+                                    </div>
+
+                                    <div class="col mr-2 d-flex justify-content-end">
+                                        <div class="fw-bold h5 text-yellow">-500.00 ฿</div>
+                                    </div>
+
+                                    <div class="w-100"></div>
+                                    <div class="col-auto d-flex">
+                                        <p class="fw-bold mb-0 ">บันเทิง</p>
+                                    </div>
+                                    <div class="col mr-2 d-flex justify-content-end">
+                                        <p class="fw-light mb-0">22/12/2023 11:17</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container list-expen" style="display:none;">
                     <div class="card border-left-primary ">
                         <div class="card-body">
                             <div class="row no-gutters align-items-center">
@@ -223,99 +303,10 @@
                     </div>
                 </div>
             </div>
-            <div class="container list-expen" style="display:none;">
-                <div class="card border-left-primary ">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-auto d-flex">
-                                <h5 class="fw-bold mb-0 text-darkblue">รายรับแน่นอน</h5>
-                            </div>
-
-                            <div class="col mr-2 d-flex justify-content-end">
-                                <div class="fw-bold h5 text-darkblue">+1,000.00 ฿</div>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col-auto d-flex">
-                                <p class="fw-bold mb-0 ">เงินเดือน</p>
-                            </div>
-                            <div class="col mr-2 d-flex justify-content-end">
-                                <p class="fw-light mb-0">22/12/2023 11:17</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="card border-left-primary ">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-auto d-flex">
-                                <h5 class="fw-bold mb-0 text-lightblue">รายรับไม่แน่นอน</h5>
-                            </div>
-
-                            <div class="col mr-2 d-flex justify-content-end">
-                                <div class="fw-bold h5 text-lightblue">+500.00 ฿</div>
-                            </div>
-
-                            <div class="w-100"></div>
-                            <div class="col-auto d-flex">
-                                <p class="fw-bold mb-0 ">เงินเดือน</p>
-                            </div>
-                            <div class="col mr-2 d-flex justify-content-end">
-                                <p class="fw-light mb-0">22/12/2023 11:17</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="card border-left-primary ">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-auto d-flex">
-                                <h5 class="fw-bold mb-0 text-darkpink">รายรับไม่แน่นอน</h5>
-                            </div>
-
-                            <div class="col mr-2 d-flex justify-content-end">
-                                <div class="fw-bold h5 text-darkpink">-2,500.00 ฿</div>
-                            </div>
-
-                            <div class="w-100"></div>
-                            <div class="col-auto d-flex">
-                                <p class="fw-bold mb-0 ">ค่าอาหาร</p>
-                            </div>
-                            <div class="col mr-2 d-flex justify-content-end">
-                                <p class="fw-light mb-0">22/12/2023 11:17</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="card border-left-primary ">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-auto d-flex">
-                                <h5 class="fw-bold mb-0 text-yellow">รายจ่ายไม่จำเป็น</h5>
-                            </div>
-
-                            <div class="col mr-2 d-flex justify-content-end">
-                                <div class="fw-bold h5 text-yellow">-500.00 ฿</div>
-                            </div>
-
-                            <div class="w-100"></div>
-                            <div class="col-auto d-flex">
-                                <p class="fw-bold mb-0 ">บันเทิง</p>
-                            </div>
-                            <div class="col mr-2 d-flex justify-content-end">
-                                <p class="fw-light mb-0">22/12/2023 11:17</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+        <!--Card List-->
     </div>
-    <!--Card List-->
 </div>
-
 @section Scripts {
     <script src="~/js//GraphDonut.js"></script>
 }
