@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\Aomtung.Web.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\css\\Calcurater.css",
+      "PackagePath": "staticwebassets\\css\\Calcurater.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -25,8 +33,16 @@
       "PackagePath": "staticwebassets\\img_icons\\wallet.svg"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\Calcurater.js",
+      "PackagePath": "staticwebassets\\js\\Calcurater.js"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\CountdownTime.js",
       "PackagePath": "staticwebassets\\js\\CountdownTime.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\GraphDonut.js",
+      "PackagePath": "staticwebassets\\js\\GraphDonut.js"
     },
     {
       "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\js\\Sweetalert.js",
@@ -111,6 +127,22 @@
     {
       "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
     },
     {
       "Id": "C:\\Users\\Lenovo\\Documents\\Web_Aomtung\\Web_Aomtung\\Aomtung.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",

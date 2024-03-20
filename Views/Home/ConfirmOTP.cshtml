@@ -2,9 +2,7 @@
 @{
     ViewData["Title"] = "Confirm OTP";
 }
-@if (Model != null)
-{
-
+<div class="container-md d-flex flex-column align-items-center">
     <img src="~/logo/LogoAomtung.svg" alt="Logo" width="290">
     <h5 class="h3 text-center font-weight-light mb-4">ระบุรหัส OTP ที่ได้รับจากเบอร์</h5>
     <form asp-action="ConfirmOTP" asp-controller="Authen" method="post">
@@ -18,24 +16,26 @@
                     <input type="text" class="js-otp-input otp-input mx-1" oninput="focusNext(this)" inputmode="numeric" pattern="[0-9]*" required>
                     <input type="text" class="js-otp-input otp-input mx-1" oninput="focusNext(this)" inputmode="numeric" pattern="[0-9]*" required>
                 </div>
-                <input type="hidden" class="form-control text-black-50 refcode" value="@Model.RefCode">
+                <input type="hidden" class="form-control text-black-50 refcode" value="">
             </div>
             <br>
-            <a class="text-decoration-none text-black mb-2 refcode">Refcode: @Model.RefCode</a>
+            <a class="text-decoration-none text-black mb-2 refcode">Refcode:</a>
             <br>
             <button class="btn btn-pink mb-3 summit-otp" href="#" style="width: 320px; margin-top: 20px;" type="submit" disabled>ยืนยัน</button>
         </fieldset>
     </form>
-    <br>
-    <div>
-        <a class="text-decoration-none text-black reset-otp hidden" id="reset-otp">
-            <i class="bi bi-arrow-repeat"></i>
-            ส่งรหัส OTP อีกครั้ง
-        </a>
-        <a class="text-decoration-none text-black expired-otp hidden" id="expired-otp">
-        </a>
-    </div>
-
+</div>
+<br>
+<div class="d-flex flex-column align-items-center">
+    <a class="text-decoration-none text-black reset-otp hidden" id="reset-otp">
+        <i class="bi bi-arrow-repeat"></i>
+        ส่งรหัส OTP อีกครั้ง
+    </a>
+    <a class="text-decoration-none text-black expired-otp hidden" id="expired-otp">
+    </a>
+</div>
+@if (Model != null)
+{
     @section Scripts {
     @if (Model?.Is_Duplicate == true)
         {

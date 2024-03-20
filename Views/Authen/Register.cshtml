@@ -21,7 +21,8 @@
             </div>
             <div class="form-group mb-3">
                 <div class="d-flex justify-content-center">
-                    <button id="btn-summit" class="btn btn-pink summit-phone w-100" type="submit" disabled>ยืนยัน</button>
+                    @*    <button id="btn-summit" class="btn btn-pink summit-phone w-100" type="submit" disabled>ยืนยัน</button> *@
+                    <a id="btn-summit" href="@Url.Action("ConfirmOTP", "Home")" class="btn btn-pink summit-phone w-100" type="submit" disabled>ยืนยัน</a>
                 </div>
             </div>
         </form>

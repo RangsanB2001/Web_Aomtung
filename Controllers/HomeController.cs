@@ -63,21 +63,34 @@ namespace Aomtung.Web.Controllers
 
         public IActionResult ConfirmOTP()
         {
-            string? serializedOtpResponse = TempData["DataOTP"] as string;
+            /* string? serializedOtpResponse = TempData["DataOTP"] as string;
 
-            if (string.IsNullOrEmpty(serializedOtpResponse))
-            {
-                return RedirectToAction("ConfirmOTP", "Home");
-            }
-            var otpResponse = JsonSerializer.Deserialize<DataOTP>(serializedOtpResponse);
+             if (string.IsNullOrEmpty(serializedOtpResponse))
+             {
+                 return RedirectToAction("ConfirmOTP", "Home");
+             }
+             var otpResponse = JsonSerializer.Deserialize<DataOTP>(serializedOtpResponse);
 
-            return View(otpResponse);
+             return View(otpResponse);*/
+            return View();
         }
 
         public IActionResult ViewHome()
         {
             return View();
         }
+
+
+        public IActionResult ProfileUser()
+        {
+            return View();
+        }
+
+        public IActionResult Insert()
+        {
+            return View();
+        }
+
         public IActionResult ErrorPage()
         {
             return View();
