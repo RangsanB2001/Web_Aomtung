@@ -1,2 +1,6 @@
-﻿bin/
+﻿# Ignore bin and obj directories
+bin/
 obj/
+
+# Ignore appsettings.json file with sensitive information
+appsettings.json
